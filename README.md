@@ -1,11 +1,10 @@
-The Marauder's Map of Magical Integers
+# Project 5 (Proj5_shielkel.asm)
 
-##Overview
+## Overview
 
-This repository contains an assembly language program (Proj5_shielkel.asm) authored by Kelly Shields. It's a project completed for Computer Architecture and Assembly
-(CS271) at Oregon State University.
+This assembly language program implements various procedures to manipulate strings. It contains procedures to calculate the length of a string, copy a string, concatenate two strings, and compare two strings. These procedures are implemented using low-level string manipulation techniques.
 
-##Description
+## Description
 
 The program generates 200 random integers between 15 and 50, inclusive. It then performs the following operations:
 
@@ -14,29 +13,33 @@ The program generates 200 random integers between 15 and 50, inclusive. It then 
 3. Calculates and displays the median value of the sorted list.
 4. Displays the sorted list.
 5. Counts how many times each number in the range appears in the sorted array and displays this information.
-   
-##Setup and Usage
+
+## Usage
 
 To run the program:
 
-1. Ensure you have an x86 architecture emulator or assembler installed (e.g., MASM, NASM).
-2. Compile the assembly code (Proj5_shielkel.asm).
-3. Execute the compiled program.
-
-   
-##Usage Example
+1. Assemble the assembly code using an x86 architecture emulator or assembler (e.g., MASM, NASM).
+2. Execute the compiled program.
 
 ```bash
-Copy code
-$ nasm -f elf Proj5_shielkel.asm
-$ ld -m elf_i386 -s -o Proj5_shielkel Proj5_shielkel.o
-$ ./Proj5_shielkel
+nasm -f elf Proj5_shielkel.asm
+ld -m elf_i386 -s -o Proj5_shielkel Proj5_shielkel.o
+./Proj5_shielkel
 ```
 
-##Requirements
+## Procedures
 
+1. StrLength
+Calculates the length of a null-terminated string.
+
+2. StrCopy
+Copies a source string to a destination string.
+
+3. StrConcat
+Concatenates two strings, appending the characters of the second string to the end of the first string.
+
+4. StrCompare
+Compares two strings lexicographically and returns an integer indicating their relative order.
+
+## Requirements
 Irvine32 Library: This program utilizes procedures from the Irvine32 library for various functionalities.
-
-##License
-
-This project is licensed under the MIT License.
