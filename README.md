@@ -2,7 +2,7 @@
 
 ## Overview
 
-This assembly language program implements various procedures to manipulate strings. It contains procedures to calculate the length of a string, copy a string, concatenate two strings, and compare two strings. These procedures are implemented using low-level string manipulation techniques.
+Random Integer Analyzer is an assembly language program that generates 200 random integers between 15 and 50 (inclusive), sorts them, calculates and displays the median value, and counts the occurrence of each number in the range.
 
 ## Description
 
@@ -27,19 +27,14 @@ ld -m elf_i386 -s -o Proj5_shielkel Proj5_shielkel.o
 ./Proj5_shielkel
 ```
 
-## Procedures
+## Program Flow
 
-1. StrLength
-Calculates the length of a null-terminated string.
+1. Introduction: Displays program information, including the name, author, and functionality.
+2. Random Number Generation: Generates 200 random integers between 15 and 50.
+3. Display Unsorted List: Shows the list of generated random numbers before sorting.
+4. Sorting: Sorts the list of random numbers in ascending order.
+5. Display Sorted List: Shows the sorted list of random numbers.
+6. Calculate and Display Median: Calculates the median value of the sorted list and displays it.
+7. Count Occurrences: Counts the occurrence of each generated number within the specified range.
+8. Display Counts: Shows the count of each generated number in the range.
 
-2. StrCopy
-Copies a source string to a destination string.
-
-3. StrConcat
-Concatenates two strings, appending the characters of the second string to the end of the first string.
-
-4. StrCompare
-Compares two strings lexicographically and returns an integer indicating their relative order.
-
-## Requirements
-Irvine32 Library: This program utilizes procedures from the Irvine32 library for various functionalities.
